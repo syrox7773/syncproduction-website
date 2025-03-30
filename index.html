@@ -3,51 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyncProduction - Elite Modeling Agency</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>SyncProduction - Modeling Agency</title>
+    <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-
     <header>
-        <h1>SyncProduction</h1>
-        <p>Your Gateway to High-Fashion Modeling</p>
+        <nav>
+            <h1>SyncProduction</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#signup">Join Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section class="hero">
-        <div class="hero-text">
-            <h2>Join the Future of Modeling</h2>
-            <p>Elite shoots, top brand collaborations, and high-end career growth.</p>
-            <button onclick="exploreServices()">Explore Services</button>
-        </div>
-        <div class="hero-image">
-            <img src="https://source.unsplash.com/600x400/?fashion,model" alt="High Fashion Model">
-        </div>
+    
+    <section id="home" class="hero">
+        <h2>Welcome to SyncProduction</h2>
+        <p>Luxury Modeling & Production Services</p>
     </section>
-
-    <section id="services" class="services">
-        <div class="service-card">
-            <h3>Luxury Photoshoots</h3>
-            <p>Get featured in high-end editorials.</p>
-        </div>
-        <div class="service-card">
-            <h3>Fashion Week Lineups</h3>
-            <p>Walk the runway for world-class brands.</p>
-        </div>
-        <div class="service-card">
-            <h3>Portfolio Building</h3>
-            <p>Build an elite portfolio with top-tier photographers.</p>
-        </div>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>SyncProduction is a premium modeling agency and production house.</p>
     </section>
-
-    <section class="actions">
-        <button onclick="register()">Register</button>
-        <button onclick="makePayment()">Make Payment</button>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Portfolio Shoots</li>
+            <li>Full Modeling Career Guidance</li>
+            <li>Ramp Walk Training</li>
+        </ul>
     </section>
-
-    <footer>
-        <p>&copy; 2025 SyncProduction. All Rights Reserved.</p>
-    </footer>
-
+    
+    <section id="models">
+        <h2>Our Models</h2>
+        <p>Showcase of signed models.</p>
+    </section>
+    
+    <section id="signup">
+        <h2>Join Us</h2>
+        <form id="registration-form">
+            <input type="text" placeholder="Name" required>
+            <input type="number" placeholder="Age" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Instagram Profile" required>
+            <input type="text" placeholder="Portfolio Link" required>
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>8619404473</p>
+    </section>
 </body>
 </html>
