@@ -1,21 +1,31 @@
-body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #0d0d0d; color: #fff; text-align: center; }
+/* Redesigned styles.css for a premium, high-end aesthetic */
 
-header { padding: 20px; background: linear-gradient(90deg, #ff416c, #ff4b2b); box-shadow: 0px 4px 10px rgba(255, 75, 43, 0.5); }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
 
-.neon-text { font-size: 2.5rem; font-weight: bold; text-transform: uppercase; text-shadow: 0px 0px 10px #ff4b2b; }
+body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #0d0d0d; color: #fff; text-align: center; overflow-x: hidden; }
 
-.hero-text { font-size: 2rem; margin-top: 50px; }
+header { padding: 20px; background: linear-gradient(90deg, #1e1e1e, #000); box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7); }
 
-.btn { padding: 10px 20px; font-size: 1.2rem; color: #fff; background: #ff4b2b; border: none; cursor: pointer; border-radius: 8px; transition: 0.3s; }
+.neon-text { font-size: 3rem; font-weight: 700; text-transform: uppercase; color: #ffcc00; text-shadow: 0px 0px 15px rgba(255, 204, 0, 0.8); }
 
-.btn:hover { background: #ff416c; }
+.hero-section { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 90vh; background: url('https://source.unsplash.com/1600x900/?fashion,model') no-repeat center center/cover; position: relative; }
 
-#services { display: flex; justify-content: center; gap: 20px; padding: 40px; }
+.hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
 
-.service-card { background: rgba(255, 75, 43, 0.1); padding: 20px; border-radius: 10px; font-size: 1.2rem; box-shadow: 0px 4px 10px rgba(255, 75, 43, 0.5); transition: transform 0.3s; }
+.hero-content { position: relative; z-index: 10; text-align: center; }
 
-.service-card:hover { transform: scale(1.05); }
+.hero-text { font-size: 2.5rem; font-weight: 600; margin-bottom: 20px; }
 
-#threeD-section { width: 100%; height: 400px; position: relative; background: #111; }
+.btn { padding: 12px 24px; font-size: 1.2rem; font-weight: bold; color: #fff; background: linear-gradient(90deg, #ffcc00, #ff6600); border: none; cursor: pointer; border-radius: 8px; transition: all 0.3s ease-in-out; text-transform: uppercase; box-shadow: 0px 5px 15px rgba(255, 102, 0, 0.6); }
 
-canvas { display: block; width: 100%; height: 100%; }
+.btn:hover { background: linear-gradient(90deg, #ff6600, #ffcc00); transform: scale(1.05); }
+
+#services { display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; padding: 60px 20px; background: #111; }
+
+.service-card { background: #222; padding: 25px; border-radius: 12px; font-size: 1.3rem; font-weight: 500; box-shadow: 0px 5px 15px rgba(255, 102, 0, 0.3); transition: transform 0.3s; text-align: center; max-width: 300px; }
+
+.service-card img { width: 100%; border-radius: 8px; margin-bottom: 15px; }
+
+.service-card:hover { transform: translateY(-5px); box-shadow: 0px 8px 20px rgba(255, 102, 0, 0.6); }
+
+.footer { padding: 20px; background: #1e1e1e; font-size: 1rem; }
