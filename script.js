@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const models = [
             { name: "Model 1", img: "https://syncproduction-website.vercel.app/images/model1.jpg" },
             { name: "Abhishek Rathore", img: "https://syncproduction-website.vercel.app/images/model2.jpg" },
-            { name: "Model 3", img: "https://syncproduction-website.vercel.app/images/model3.jpg" },
-            { name: "Model 4", img: "https://syncproduction-website.vercel.app/images/model4.jpg" }
+            { name: "Model 2", img: "https://syncproduction-website.vercel.app/images/model3.jpg" },
+            { name: "Model 3", img: "https://syncproduction-website.vercel.app/images/model4.jpg" }
         ];
         
         modelsSection.innerHTML = ""; // Clear previous content
