@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (modelsSection) {
         const models = [
             { name: "Model 1", img: "https://syncproduction-website.vercel.app/images/model1.jpg" },
-            { name: "ABHISHEK RATHORE", img: "https://syncproduction-website.vercel.app/images/ABHISHEK RATHORE.jpg" },
+            { name: "Abhishek Rathore", img: "https://syncproduction-website.vercel.app/images/model2.jpg" },
             { name: "Model 3", img: "https://syncproduction-website.vercel.app/images/model3.jpg" },
             { name: "Model 4", img: "https://syncproduction-website.vercel.app/images/model4.jpg" }
         ];
