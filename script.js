@@ -52,10 +52,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const modelsSection = document.getElementById("models");
     if (modelsSection) {
         const models = [
-            { name: "Model 1", img: "images/model1.jpg" },
-            { name: "Model 2", img: "images/model2.jpg" },
-            { name: "Model 3", img: "images/model3.jpg" },
-            { name: "Model 4", img: "images/model4.jpg" }
+            { name: "Model 1", img: "https://syncproduction-website.vercel.app/images/model1.jpg" },
+            { name: "Model 2", img: "https://syncproduction-website.vercel.app/images/model2.jpg" },
+            { name: "Model 3", img: "https://syncproduction-website.vercel.app/images/model3.jpg" },
+            { name: "Model 4", img: "https://syncproduction-website.vercel.app/images/model4.jpg" }
         ];
         
         const modelGrid = document.createElement("div");
@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const img = document.createElement("img");
             img.src = model.img;
             img.alt = model.name;
+            img.onerror = function() { this.src = "https://syncproduction-website.vercel.app/images/placeholder.jpg"; };
             
             const name = document.createElement("p");
             name.textContent = model.name;
