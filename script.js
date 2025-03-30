@@ -15,7 +15,12 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
         
-        alert("Application submitted successfully!");
-        window.location.href = "payment.html"; // Redirect to payment page
+        // Simulate successful submission
+        alert("Application submitted successfully! Redirecting to payment...");
+        
+        // Redirect to a simulated payment gateway
+        setTimeout(() => {
+            window.location.href = "https://syncproduction-payment.com/checkout"; // Example placeholder URL
+        }, 2000);
     });
 });
