@@ -1,28 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("registration-form");
 
-    form.addEventListener("submit", function (event) {
+    form.addEventListener("submit", function(event) {
         event.preventDefault();
         
-        // Simple Form Validation
-        let isValid = true;
-        const inputs = form.querySelectorAll("input");
-        inputs.forEach(input => {
-            if (input.value.trim() === "") {
-                isValid = false;
-                input.style.border = "2px solid red";
-            } else {
-                input.style.border = "1px solid #666";
-            }
-        });
+        const fullName = form.querySelector("input[placeholder='Full Name']").value;
+        const age = form.querySelector("input[placeholder='Age']").value;
+        const email = form.querySelector("input[placeholder='Email']").value;
+        const instagram = form.querySelector("input[placeholder='Instagram Profile']").value;
+        const portfolio = form.querySelector("input[placeholder='Portfolio Link']").value;
 
-        if (!isValid) {
-            alert("Please fill out all fields correctly.");
+        if (!fullName || !age || !email || !instagram || !portfolio) {
+            alert("Please fill in all fields before submitting.");
             return;
         }
-
-        // Redirect to Payment Page (Dummy Example)
-        alert("Redirecting to payment...");
-        window.location.href = "https://paymentgateway.com/checkout"; // Replace with actual payment URL
+        
+        alert("Application submitted successfully!");
+        window.location.href = "payment.html"; // Redirect to payment page
     });
 });
