@@ -47,4 +47,36 @@ document.addEventListener("DOMContentLoaded", function() {
             window.location.href = "https://payment-gateway-link.com"; // Replace with actual payment gateway URL
         });
     }
+
+    // Dynamically Load Model Images
+    const modelsSection = document.getElementById("models");
+    if (modelsSection) {
+        const models = [
+            { name: "Model 1", img: "images/model1.jpg" },
+            { name: "Model 2", img: "images/model2.jpg" },
+            { name: "Model 3", img: "images/model3.jpg" },
+            { name: "Model 4", img: "images/model4.jpg" }
+        ];
+        
+        const modelGrid = document.createElement("div");
+        modelGrid.classList.add("model-gallery");
+        
+        models.forEach(model => {
+            const modelDiv = document.createElement("div");
+            modelDiv.classList.add("model");
+            
+            const img = document.createElement("img");
+            img.src = model.img;
+            img.alt = model.name;
+            
+            const name = document.createElement("p");
+            name.textContent = model.name;
+            
+            modelDiv.appendChild(img);
+            modelDiv.appendChild(name);
+            modelGrid.appendChild(modelDiv);
+        });
+        
+        modelsSection.appendChild(modelGrid);
+    }
 });
