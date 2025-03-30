@@ -53,27 +53,45 @@ nav ul li a {
 }
 
 .model-gallery {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    padding: 40px;
 }
 
 .model {
-    background: #333;
-    padding: 15px;
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.model img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
-.model img {
-    width: 200px;
-    height: auto;
-    border-radius: 5px;
+.model p {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f1f1f1;
 }
 
 .model:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+}
+
+.model:hover img {
+    transform: scale(1.1);
 }
 
 /* Signup Form */
@@ -90,17 +108,18 @@ form {
 }
 
 form input, button {
-    padding: 10px;
-    margin: 10px 0;
+    padding: 12px;
+    margin: 12px 0;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 8px;
+    font-size: 18px;
 }
 
 button {
     background: #ff6600;
     color: #fff;
     cursor: pointer;
+    font-weight: bold;
 }
 
 button:hover {
