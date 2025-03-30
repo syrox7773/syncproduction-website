@@ -1,9 +1,28 @@
-document.addEventListener("DOMContentLoaded", function() { console.log("Script Loaded Successfully"); });
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("registration-form");
 
-function exploreServices() { window.scrollTo({ top: document.querySelector(".services").offsetTop, behavior: "smooth" }); }
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        
+        // Simple Form Validation
+        let isValid = true;
+        const inputs = form.querySelectorAll("input");
+        inputs.forEach(input => {
+            if (input.value.trim() === "") {
+                isValid = false;
+                input.style.border = "2px solid red";
+            } else {
+                input.style.border = "1px solid #666";
+            }
+        });
 
-function openRegistration() { alert("Registration functionality coming soon!"); }
+        if (!isValid) {
+            alert("Please fill out all fields correctly.");
+            return;
+        }
 
-function processPayment() { alert("Payment processing will be integrated shortly!"); }
-
-// Smooth scrolling animation const buttons = document.querySelectorAll("button"); buttons.forEach(button => { button.addEventListener("mouseover", () => { button.style.transform = "scale(1.1)"; button.style.transition = "0.3s ease-in-out"; }); button.addEventListener("mouseout", () => { button.style.transform = "scale(1)"; }); });
+        // Redirect to Payment Page (Dummy Example)
+        alert("Redirecting to payment...");
+        window.location.href = "https://paymentgateway.com/checkout"; // Replace with actual payment URL
+    });
+});
