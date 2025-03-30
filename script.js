@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function() {
             { name: "Model 4", img: "https://syncproduction-website.vercel.app/images/model4.jpg" }
         ];
         
+        modelsSection.innerHTML = ""; // Clear previous content
+        
         const modelGrid = document.createElement("div");
         modelGrid.classList.add("model-gallery");
         
