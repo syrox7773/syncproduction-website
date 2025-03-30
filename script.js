@@ -1,9 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () { console.log("Website Loaded Successfully"); });
+document.addEventListener("DOMContentLoaded", function () {
+    const exploreBtn = document.getElementById("explore-btn");
 
-function exploreServices() { document.getElementById("services").scrollIntoView({ behavior: "smooth" }); }
+    exploreBtn.addEventListener("click", function () {
+        alert("Welcome to SyncProduction! Explore our services.");
+    });
 
-// Dynamic text effect for the hero section const heroText = document.querySelector(".hero-text"); const textArray = ["Modeling Shoots", "Ramp Walk Training", "Fashion Campaigns", "Studio Setups"]; let textIndex = 0;
+    // Animate services on scroll
+    const serviceCards = document.querySelectorAll(".service-card");
+    window.addEventListener("scroll", function () {
+        serviceCards.forEach((card) => {
+            let position = card.getBoundingClientRect().top;
+            let screenHeight = window.innerHeight;
 
-function changeHeroText() { heroText.textContent = textArray[textIndex]; textIndex = (textIndex + 1) % textArray.length; } setInterval(changeHeroText, 3000);
-
-// Hover effect on service cards const serviceCards = document.querySelectorAll(".service-card"); serviceCards.forEach(card => { card.addEventListener("mouseover", () => { card.classList.add("highlight"); }); card.addEventListener("mouseout", () => { card.classList.remove("highlight"); }); });
+            if (position < screenHeight - 100) {
+                card.style.transform = "translateY(0)";
+                card.style.opacity = "1";
+            }
+        });
+    });
+});
