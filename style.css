@@ -1,48 +1,54 @@
-* {
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: black;
+    color: white;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: #121212;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
+/* Header Styling */
 header {
-    background-color: #1e1e1e;
-    padding: 20px;
-    font-size: 1.5rem;
+    padding: 100px 20px;
+    background: url('https://source.unsplash.com/1600x900/?fashion,model') no-repeat center center/cover;
+    text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    background: #222;
-    padding: 10px;
+h1 {
+    font-size: 50px;
+    font-weight: bold;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: gold;
+.btn {
+    background: gold;
+    color: black;
+    padding: 15px 30px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
 }
 
-section {
-    padding: 40px;
+.btn:hover {
+    background: white;
+    color: black;
 }
 
-.package {
-    background: #1e1e1e;
+/* Services Section */
+#services {
+    padding: 50px;
+    background: #222;
+}
+
+h2 {
+    font-size: 40px;
+    color: gold;
+}
+
+/* Footer */
+footer {
+    background: #111;
     padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
 }
