@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyncProduction - Modeling Agency</title>
+    <title>SyncProduction - Elite Modeling Agency</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
@@ -13,23 +13,28 @@
             <h1>SyncProduction</h1>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a href="#models">Models</a></li>
-                <li><a href="#signup">Join Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#signup">Apply</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     
     <section id="home" class="hero">
-        <h2>Welcome to SyncProduction</h2>
-        <p>Luxury Modeling & Production Services</p>
+        <div class="overlay">
+            <h2>Welcome to SyncProduction</h2>
+            <p>Elite Modeling & Production Services</p>
+        </div>
     </section>
     
-    <section id="about">
-        <h2>About Us</h2>
-        <p>SyncProduction is a premium modeling agency and production house.</p>
+    <section id="models" class="portfolio">
+        <h2>Our Models</h2>
+        <div class="model-gallery">
+            <div class="model"><img src="model1.jpg" alt="Model 1"><p>Model Name 1</p></div>
+            <div class="model"><img src="model2.jpg" alt="Model 2"><p>Model Name 2</p></div>
+            <div class="model"><img src="model3.jpg" alt="Model 3"><p>Model Name 3</p></div>
+        </div>
     </section>
     
     <section id="services">
@@ -41,26 +46,21 @@
         </ul>
     </section>
     
-    <section id="models">
-        <h2>Our Models</h2>
-        <p>Showcase of signed models.</p>
-    </section>
-    
-    <section id="signup">
-        <h2>Join Us</h2>
+    <section id="signup" class="apply">
+        <h2>Apply to Join</h2>
         <form id="registration-form">
-            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Full Name" required>
             <input type="number" placeholder="Age" required>
             <input type="email" placeholder="Email" required>
             <input type="text" placeholder="Instagram Profile" required>
             <input type="text" placeholder="Portfolio Link" required>
-            <button type="submit">Proceed to Payment</button>
+            <button type="submit">Submit Application</button>
         </form>
     </section>
     
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>8619404473</p>
+        <p>Phone: 8619404473</p>
     </section>
 </body>
 </html>
